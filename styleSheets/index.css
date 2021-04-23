@@ -1,0 +1,45 @@
+p.lead::first-letter {
+    font-family: "Brush Script MT", cursive;
+    font-size: 4em;
+    float: left;
+    line-height: .5;
+    margin: .1em .2em;
+    color: var(--accent-primary)
+}
+p { line-height: 150%; }
+.image-frame {
+    margin: 90px 5px 25px 15px;
+    float: right;
+}
+main img {
+    width: 90%;
+    box-shadow: 0 2px 5px var(--accent-secondary);
+}
+#values {
+    text-align: center;
+    background-color: var(--light-background);
+    padding: 1rem;
+    border: 2px solid var(--accent-secondary);
+    border-radius: 2%;
+    margin: 0 0 30px 0;
+}
+footer { clear: both; }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-frame {
+        float: none;
+        margin: 0 auto;
+        width: 350px;
+        order: 1;
+        position: relative;
+    }
+    article:nth-of-type(1) { order: 0; }
+    article:nth-of-type(2) { order: 2; }
+    article:nth-of-type(3) { order: 3; }
+    aside { order: 4; }
+}

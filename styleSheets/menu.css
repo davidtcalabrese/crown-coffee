@@ -1,0 +1,26 @@
+h2 { text-align: center; }
+dt {
+    font-weight: bold;
+    color: var(--accent-primary);
+}
+main .price, main p {
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+dd { margin: 0 0 1rem 0; }
+main p { color: var(--dark-background); }
+section {
+    background-color: #FFF;
+    padding: 25px;
+    margin: 20px 0 35px 0;
+    border-radius: 10px;
+    box-shadow: var(--card-box-shadow);
+}
+.back-to-top { 
+    text-align: center;
+    margin-bottom: 20px;
+}
+section:hover { box-shadow: var(--card-box-shadow-hover); }
+@media (max-width: 600px) {
+    #hours-box {margin: 10px 0 0 0;}
+}

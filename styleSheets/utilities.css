@@ -1,0 +1,65 @@
+.btn {
+    display: inline-block;
+    background-color: var(--dark-background);
+    color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 40%;
+    height: 40px;
+}
+.btn-container { text-align: center; }
+.btn:hover { 
+    cursor: pointer;
+    border: 2px solid var(--accent-primary); 
+    color: var(--accent-primary);
+    transform: scale(0.97);
+}
+.form {
+    width: 100%;
+    background-color: var(--light-background);
+    border-radius: 2%;
+    padding: .5rem;
+    margin: 25px 0;
+}
+.input {
+    margin: .5rem 0 1rem 0;
+    display: block;
+}
+input, select, textarea {
+    margin: 2px 0px 15px 0;
+    display: block;
+    border-radius: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+legend { font-weight: bold; }
+fieldset {
+    border-radius: 5px;
+    padding: 1rem;
+    width: 90%;
+    margin: 10px auto;
+    background-color: var(--fieldset-background);
+    border: 0;
+    border-radius: 25px;
+}
+textarea { 
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+input:focus, select:focus, textarea:focus  {
+    background: rgb(242,240,253);
+    background: linear-gradient(341deg,   rgba(242,240,253,1) 18%, 
+                                        rgba(201,249,255,1) 39%, 
+                                        rgba(251,251,229,1) 65%);
+    outline: none;
+}
+#footer-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-background);
+    margin: 0;
+}

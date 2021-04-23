@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+Author: David Calabrese
+Date: 01/20/2021
+-->
+<!-- prettier-ignore -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styleSheets/utilities.css" />
+        <link rel="stylesheet" href="styleSheets/main.css" />
+        <link rel="stylesheet" href="styleSheets/club.css" />
+        <script src="js/script.js"></script>
+        <title>Join Our Coffee Club</title>
+    </head>
+
+    <body>
+
+        <header>
+            <img
+                src="images/crownCoffeeLogo_white.png"
+                alt="Crown Coffee Logo"/>
+            <h1>Coffee Club</h1>
+
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="coffee.html">Our Coffee</a> 
+                <a href="coffeeguide.html">Coffee Guide</a> 
+                <a href="menu.html">Menu</a> 
+                <a href="club.html">Club</a> 
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Crown Coffee Subscription</h2>
+                <p> Prefer to enjoy your coffee at home? No problem! Sign up for
+                    our Coffee Club and get the best coffee delivered right to
+                    your door.</p>
+            </section>
+            <form   action="http://itins3.madisoncollege.edu/echo.php"
+                    method="post"
+                    class="form">
+                <label>Name
+                    <input  type="text"
+                            id="name"
+                            name="name"
+                            class="input"
+                            required
+                            autocomplete="off"/>
+                </label>
+                <label>Password
+                    <input  type="password"
+                            name="password"
+                            class="input"
+                            id="password"
+                            minlength="8"
+                            maxlength="25"
+                            required
+                            autocomplete="off"/>
+                </label>
+                <label>
+                    <input  type="checkbox"
+                            onclick="togglePasswordVisibility()"
+                            id="toggle" /> <small>Show Password</small><br/>
+                </label>
+                <label>Type of Bean
+                    <select name="bean-type">
+                        <option disabled selected value>
+                            -- select an option --
+                        </option>
+                        <option value="grounds">Grounds</option>
+                        <option value="whole">Whole</option>
+                        <option value="rounds">Rounds</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>Regular or Decaf?</legend>
+                    <label>Regular
+                        <input  type="radio"
+                                name="reg-decaf"
+                                value="regular"/>
+                    </label>
+                    <label>Decaffeinated
+                        <input  type="radio"
+                                name="reg-decaf"
+                                value="decaf"/>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Type of Roast</legend>
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-1"
+                                value="highlander-grog"/>
+                                Highlander Grog
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-2"
+                                value="cinnamon-swirl"/>
+                                Cinnamon Swirl
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-3"
+                                value="hazelnut-cream"/>
+                                Hazelnut Cream
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-4"
+                                value="french-vanilla"/>
+                                French Vanilla
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-5"
+                                value="blueberry-nut"/>
+                                Blueberry Nut
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-6"
+                                value="banana-caramel"/>
+                                Banana Caramel
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-7"
+                                value="chocolate-cherry"/>
+                                Chocolate Cherry
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-8"
+                                value="english-toffee"/>
+                                English Toffee
+                    </label><br />
+                    <label>
+                        <input  type="checkbox"
+                                name="roast-type-9"
+                                value="vanilla-raspberry"/>
+                                Vanilla Raspberry
+                    </label><br />
+                </fieldset>
+                <label>Additional comments
+                    <textarea   name="comments"
+                                cols="30"
+                                rows="2"
+                                class="input"
+                                placeholder="Please be nice.">
+                    </textarea>
+                </label>
+
+                <div class="btn-container">
+                    <input type="submit" value="Order Now" class="btn" />
+                    <input type="reset" value="Reset" class="btn" />
+                </div>
+            </form><br />
+        </main>
+
+        <footer>
+
+            <div id="hours-box">
+              <a href="contact.html" id="hours">Hours and Locations</a>
+            </div>
+            <p>&copy; 2021 Crown Coffee Company</p>
+            <address>Developed by:
+                <a href="mailto:dcalabrese@madisoncollege.edu">
+                    dcalabrese@madisoncollege.edu</a>
+            </address>
+          </footer>
+    </body>
+</html>
