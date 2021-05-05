@@ -2,7 +2,7 @@ p.lead::first-letter {
     font-family: "Brush Script MT", cursive;
     font-size: 4em;
     float: left;
-    line-height: .5;
+    line-height: .6;
     margin: .1em .2em;
     color: var(--accent-primary)
 }
