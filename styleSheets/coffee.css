@@ -25,8 +25,8 @@ th {
 }
 
 /* applying border radius to individual cells so rounding is only around table corners */
-.beverage { border-radius: 10px 0 0 0; }
-.large { border-radius: 0 10px 0 0; }
+.beverage { border-radius-top-left: 10px; }
+.large { border-radius-top-right:10px; }
 .middlecol { border-radius: 0; }
 .size { width: 10%; }
 
